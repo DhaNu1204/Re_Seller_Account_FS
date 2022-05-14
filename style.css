@@ -1,0 +1,243 @@
+:root {
+  --background_color_one: #ffffff;
+  --background_color_two: #f2f4f6;
+  --background_color_three: #2c2b2b;
+
+  --text_color_one: #5c6163;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background_color_two);
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--background_color_two);
+}
+
+.main {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  height: inherit;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+}
+
+/*************Top bar***************/
+
+.top_bar {
+  background-color: var(--background_color_three);
+}
+
+.top-nav {
+  min-height: 2.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.5rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.profile p {
+  margin-right: 10px;
+}
+
+.profile .fa-solid {
+  padding-bottom: 2px;
+}
+
+/*************Main header***************/
+
+.main_header {
+  height: 5rem;
+  background-color: var(--background_color_one);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.search_tours {
+  display: flex;
+  width: 46.875rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search {
+  width: 34.375rem;
+  padding: 0.625rem;
+  border-radius: 5px;
+  border: var(--text_color_one) 1px solid;
+}
+
+#search:focus {
+  outline: none;
+}
+
+.search_tours .fa-search {
+  margin-left: -70px;
+}
+
+.search_tours .fa-home {
+  border: var(--text_color_one) 1px solid;
+  padding: 0.625rem;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+
+.cart {
+  cursor: pointer;
+  text-align: right;
+}
+
+/*************Body***************/
+
+.tour_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+  padding: 6.25rem 0 3.125rem 0;
+}
+
+.card_header {
+  overflow: hidden;
+}
+
+.card_header img {
+  width: 100%;
+  height: 15.625rem;
+  display: block;
+  border-radius: 0.625rem 0.625rem 0 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.card_header:hover img {
+  border-radius: 0.625rem 0.625rem 0 0;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.card {
+  border: rgb(184, 184, 184) 1px solid;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0px 1px 18px 3px rgba(150, 145, 145, 0.39);
+  -webkit-box-shadow: 0px 1px 18px 3px rgba(150, 145, 145, 0.39);
+  -moz-box-shadow: 0px 1px 18px 3px rgba(150, 145, 145, 0.39);
+}
+
+.tour_grid a {
+  text-decoration: none;
+  color: var(--background_color_three);
+}
+
+.card > div {
+  position: relative;
+}
+
+.card_body {
+  padding: 1.25rem;
+  transition: 0.3s;
+  min-height: 200px;
+}
+
+.card_body:hover {
+  background-color: rgb(241, 173, 45);
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+}
+
+.tour_tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.overlay {
+  color: var(--background_color_three);
+  background-color: var(--background_color_one);
+
+  margin: 1.25rem;
+  width: 7.5rem;
+  border-radius: 0.938rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card_body span {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.card_body p {
+  padding: 1.25rem 0 0 0;
+}
+
+.top {
+  background-color: #fe5000;
+  padding: 10px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: wheat;
+  position: sticky;
+  bottom: 45px;
+  left: 1300px;
+  --offset: 100px;
+  margin-top: calc(100vh + var(--offset));
+  box-shadow: -1px 2px 5px 1px rgba(153, 146, 146, 0.58);
+  -webkit-box-shadow: -1px 2px 5px 1px rgba(153, 146, 146, 0.58);
+  -moz-box-shadow: -1px 2px 5px 1px rgba(153, 146, 146, 0.58);
+}
+
+/*************Footer***************/
+
+.footer {
+  background-color: var(--background_color_three);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}

@@ -1,0 +1,77 @@
+:root {
+  --background_color_one: #ffffff;
+  --background_color_two: #f2f4f6;
+  --background_color_three: #2c2b2b;
+  --background_color_four: #fe5000;
+  --background_color_five: #c93407;
+  --background_color_six: #f2f2f2;
+
+  --text_color_one: #5c6163;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  background-color: var(--background_color_six);
+  width: 500px;
+  border: #c8c8c9 2px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  text-transform: uppercase;
+  min-height: 28vh;
+}
+
+.login span {
+  font-weight: 600;
+}
+
+.login input {
+  width: 18.375rem;
+  padding: 0.625rem;
+  border-radius: 5px;
+  border: #c8c8c9 2px solid;
+}
+
+.login input:focus {
+  outline: none;
+}
+
+.login_btn {
+  padding: 10px 50px;
+  background-color: var(--background_color_four);
+  border-radius: 10px;
+  border: var(--background_color_five) 2px solid;
+  color: var(--background_color_one);
+  text-transform: uppercase;
+  font-weight: 600;
+}
